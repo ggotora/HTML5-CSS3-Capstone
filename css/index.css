@@ -16,9 +16,9 @@ body {
   background-color: var(--bg-primary);
   background-image: url("http://www.hdwallpaperspulse.com/wp-content/uploads/2012/10/2273309478_a389e04276.jpg");
   background-size: cover; 
+  background-position: center;
   background-repeat: no-repeat; 
   font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.5;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -29,7 +29,9 @@ img {
   display: block;
   height: auto;
 }
+p {
 
+}
 a {
   text-decoration: none;
 }
@@ -45,6 +47,11 @@ a {
    display: grid;
  }
 
+ .margin-0 {
+  margin: 0;
+  padding: 0;
+}
+
  /* Header  */
 
  .header {
@@ -53,7 +60,6 @@ a {
    position: fixed;
    height: 70px;
    line-height: 70px;
-   
  }
 
  .header a {
@@ -170,4 +176,127 @@ a {
 
  }
  
+ /* Main Section */
+
+ .main {
+   grid-template-columns: 30px auto 30px;
+ }
  
+ .promotion,
+ .hello-devs,
+ .responsive_examples,
+ .main-program
+  {
+   padding-top: 70px;
+   grid-column: 2/3;
+ }
+ 
+ aside {
+   grid-column: 2/3;
+ }
+ 
+ .borders {
+  border-left: 1px solid var(--bg-light);
+  border-right: 1px solid var(--bg-light);
+}
+
+
+ /* promotion Section */
+.promotion {
+  border-bottom: 1px solid var(--text-dark);
+  height: 190px;
+}
+ .promo-card {
+   padding: 2.5rem 0;
+ }
+
+ .build {
+   background-color: var(--bg-dark);
+   padding: 10px;
+   line-height: 20px;
+   height: 40px;
+   border-radius: 50%;
+   display: block;
+   font-size: 1.4rem;
+   color: var(--bg-primary);
+ }
+ .follow_participate {
+   overflow-x: hidden;
+ }
+ .follow_participate p {
+   width: max-content;
+ }
+
+
+
+ /* Hello-devs section*/
+ .hello-devs {
+   margin-top: -40px;
+
+ }
+.hello-devs h1 {
+  font-weight: 900;
+}
+
+.break {
+  transform: rotate(25deg);
+}
+
+.title-container {
+  margin: auto;
+  background: rgb(235,59,7);
+  background: linear-gradient(28deg, rgba(235,59,7,1) 0%, rgba(173,43,5,1) 28%, rgba(0,0,0,0.9976365546218487) 36%, rgba(0,0,0,1) 40%, rgba(235,59,7,1) 45%, rgba(253,68,14,1) 59%, rgba(0,0,0,1) 61%, rgba(235,59,7,1) 65%, rgba(235,59,7,1) 100%);
+ background-clip: text;
+-webkit-background-clip: text;
+ color: transparent;
+}
+
+/* aside section */
+
+.aside {
+  display: none;
+}
+
+.topic {
+  grid-column: 1/4;
+  background-color: black;
+  color: var(--bg-primary);
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+/* compare section */
+.compare {
+  grid-column: 1/4;
+  background-image: url("../imgs/react-native_flutter_pwa-apps-comparison.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.compare h2{
+
+}
+
+/* .main-program */
+
+.main-program {
+  background-image: url("../imgs/black-free-background.png");
+  color: var(--text-light);
+}
+
+.session h2 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.session hr {
+  border-top: 1px solid var(--accent);
+  width: 90px;
+}
+
+.session h3 {
+  font-size: 20px;
+  
+}
+
