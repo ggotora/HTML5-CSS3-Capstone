@@ -4,46 +4,53 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/d86848cfe0.js" crossorigin="anonymous"></script>
 
+    <!-- Fontawesome  -->
+    <script src="https://kit.fontawesome.com/d86848cfe0.js" crossorigin="anonymous"></script>
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" href="./css/normlize.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/index.css">
 
-    <title>Django Conference | 2020</title>
+    <title>Harare Developer Conference</title>
   </head>
   <body>
-    <header>
-        <nav>
-            <a href="#" class="logo"></a>
-            <ul>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Live</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">99U Conference</a></li>
-                <li>
-                    <button>Sign Up With Email</button> 
-                    <span>or</span>
-                    <ul>
-                        <li><a href="#"><i class="fab fa-apple"></i></a></li>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google"></i></a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul>
-                <li><i class="fas fa-search"></i></li>
-                <li><a href="#">Sign In</a></li>
-                <li><svg viewBox="0 0 453.75 118.11"><path d="M195.89 78.75L191 93.84a1.1 1.1 0 01-1.12.81h-11.83c-.71 0-.92-.4-.81-1l20.39-58.83a19 19 0 001-6.22.67.67 0 01.61-.71h16.31c.51 0 .71.1.82.61l23.14 65.25c.2.51.1.91-.51.91h-13.23a1 1 0 01-1.13-.71l-5.2-15.19zM215.67 66c-2-6.73-6.11-19.07-8-26.31h-.1c-1.63 6.83-5.31 18-8 26.31zM241.14 69.78c0-14.58 10.91-26.78 29.57-26.78.81 0 1.83.11 3.36.21V23.08a.64.64 0 01.71-.71h12.85c.51 0 .61.2.61.61v60.26a56.78 56.78 0 00.41 7.44c0 .51-.1.71-.71.92a51.37 51.37 0 01-20.09 4.07c-15.09 0-26.71-8.56-26.71-25.89zm32.93-14.48a10.5 10.5 0 00-3.77-.51c-7.85 0-14.58 4.79-14.58 14.27 0 10.1 5.81 14.48 13.56 14.48a14.38 14.38 0 004.79-.61zM346.63 69.06c0 16-10.4 26.61-25.08 26.61-17.43 0-25.18-13.15-25.18-26.3 0-14.48 9.68-26.41 25.38-26.41 16.42.04 24.88 12.34 24.88 26.1zm-35.89.11c0 9 4.18 14.68 11 14.68 5.92 0 10.4-5.1 10.4-14.48 0-8-3.26-14.58-11-14.58-5.91 0-10.4 5.3-10.4 14.38zM368.06 22.37c.82 0 1 .1 1 .82v20.9a32.5 32.5 0 018.58-1.09c15 0 24.47 10.61 24.47 24.27 0 19.06-15.09 28.44-30.58 28.44a53.41 53.41 0 01-16-2.34 1.18 1.18 0 01-.61-1V23.08c0-.51.2-.71.71-.71zm7 32.62a20.49 20.49 0 00-6 .82v27.63a15.61 15.61 0 003.77.41c7.75 0 14.78-4.69 14.78-15.3.02-9.27-5.38-13.55-12.52-13.55zM422 73c.51 5.81 4.59 10.6 14.58 10.6a31.58 31.58 0 0012.54-2.34c.31-.21.61-.1.61.51v9.68c0 .72-.2 1-.71 1.23-4.08 1.93-8.56 3-15.6 3-19.16 0-25.89-13.15-25.89-25.79 0-14.07 8.66-26.92 24.67-26.92 15.39 0 21.51 11.93 21.51 22a32.37 32.37 0 01-.51 6.83.86.86 0 01-.81.81 93 93 0 01-10.51.41zm13.26-9.89a33.93 33.93 0 005.1-.2v-.72a8.3 8.3 0 00-8.67-8c-6.42 0-9.18 4.79-9.79 9zM84.13 0h49.33v118.11L84.13 0zM49.37 0H0v118.11L49.37 0zM66.75 43.53l31.43 74.58h-20.6l-9.4-23.75h-23l21.57-50.83z"></path></svg></li>
+      <header class="header flex">
+          <nav class="nav">
+              <label for="toggle">&#9776</label>
+              <input type="checkbox" id="toggle">
+              <a href="#" class="logo">Tek-A-demy</a>      
+              <ul class="menu flex">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#" class="badge badge-pill">Sign In With Email</a></li>
+                <span>or</span>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-apple"></i></a></li>
+                <li><a href="#"><i class="fab fa-google"></i></a></li>
+            </ul>                 
+          </nav>          
+          <a href="#" class="search"><i class="fas fa-search"></i></a>
+      </header>
+
+      <footer>
+        <a href="https://www.freepik.com/vectors/background">Background vector created by freepik - www.freepik.com</a>
+      </footer>
+       
+    <!-- <header class="flex">
+        <nav class="nav">
+            <label for="toggle">&#9776</label>
+            <input type="checkbox" id="toggle">
+            <ul class="menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tickets</a></li>
             </ul>
         </nav>
-    </header>
+        <a href="$" class="logo">Tek-A-demy</a>
+        <a href="#" class="search">&#128269;</a>
+    </header> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
