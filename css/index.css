@@ -394,6 +394,17 @@ hr {
 }
 
 /* Desktop Styling */
-@media screen and (min-width: 375px) {
-  
+@media screen and (min-width: 455px) {
+  .hello-devs h1 {
+    font-size: 3rem;
+    height: 40vh;
+    line-height: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hello-devs h1 {
+    font-size: 5rem;
+    height: 50vh;
+    line-height: 80px;
+  }
 }
