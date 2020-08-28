@@ -1,25 +1,21 @@
 /* Global Styles */
 :root {
   --bg-dark: #191919;
-  --accent: #EB3F07;
+  --accent: #eb3f07;
   --bg-primary: #f9f9f9;
-  --theme-blue: #3558FF; 
-  --text-dark: #A5A5A5; 
+  --theme-blue: #3558ff;
+  --text-dark: #a5a5a5;
   --text-light: #fff;
   --text-grey: #191919;
   --bg-light: rgb(185, 185, 185);
   --text-menu: #959595;
   --bg_card: rgba(0, 0, 0, 0.37);
+  --bg-tickets: #ec513c;
 }
 
-
-body {
+body, html {
   background-color: var(--bg-primary);
-  background-image: url("http://www.hdwallpaperspulse.com/wp-content/uploads/2012/10/2273309478_a389e04276.jpg");
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat; 
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -42,207 +38,225 @@ h3 {
 a {
   text-decoration: none;
 }
- li {
-   list-style: none;
- }
 
- .flex {
-   display: flex;
- }
+li {
+  list-style: none;
+}
 
- .grid {
-   display: grid;
- }
+.flex {
+  display: flex;
+}
 
- .margin-0 {
+.grid {
+  display: grid;
+}
+
+.margin-0 {
   margin: 0;
   padding: 0;
 }
 
- /* Header  */
+/* Header  */
 
- .header {
-   width: 100%;
-   background-color: var(--bg-dark);
-   position: fixed;
-   height: 70px;
-   line-height: 70px;
- }
-
- .header a {
-   color: var(--text-menu);
-   text-decoration: none;
- }
-
- .nav {
-   position: relative;
-   width: 100%; 
-   flex: 5;
-
- }
- .nav label {
-   font-size: 2rem;
-   color: var(--bg-light);
-   margin-left: 1.5rem;
-   width: max-content;
-   position: absolute;
-   padding: 0 1rem;
- }
-
- .logo {
-  font-size: 1.3rem;
-  margin-left: 100px;
- }
-
- #toggle {
-   display: none;
- }
-
- #toggle:checked ~ .menu {
-   display: block;
- }
-
- .menu{
-   display: none;
-   width: 100vw;
-   background-color: var(--text-dark);
-  
- }
- 
-
- .menu a {
-   display: inline-block;
-   padding: 0 1rem;
-   width: 100%;
-   font-size: 15px;
-   font-weight: 700;
-   
- }
-
- .menu i {
-   font-size: 1.2rem;
- }
- .menu a:hover {
-   color: var(--text-light);
- }
-
- .search {
-   display: block;
-   flex: 1;
- }
- .search .fas {
-   margin-left: 60%;
- }
-
- .menu .badge {
-   padding: 0.4rem 1rem;
-   background-color: var(--theme-blue);
-   color: var(--text-light);
-   width: max-content;
-
- }
-
- .menu span {
-    color: var(--text-light);
-    margin-left: 15px;
- }
-
- @media screen and (min-width: 768px){
-
- #toggle:checked ~ .menu {
-  display: flex;
+.header {
+  width: 100%;
+  background-color: var(--bg-dark);
+  position: fixed;
+  height: 70px;
+  line-height: 70px;
+  z-index: 100;
+  border: 1px solid black;
 }
 
-   .nav {
-     display: flex;
-    
-   }
-   .nav label {
-     display: none;
-  
-   }
-   .logo {
-     margin-left: 30px;
-     width: 25%;
-   }
-   .menu {
-     display: flex;
-     flex: 1;
-     width: 25%;
-     justify-content: center;
-     align-items: center;
-     background-color: var(--bg-dark);
-   }
-   .search {
-     flex: 1;
-   }
-   .menu a {
-     padding: 0 1rem;
-     
-   }
+.header a {
+  color: var(--text-menu);
+  text-decoration: none;
+}
 
- }
- 
- /* Main Section */
+.nav {
+  position: relative;
+  width: 100%;
+  flex: 5;
+}
 
- .main {
-   grid-template-columns: 30px auto 30px;
- }
- 
- .promotion,
- .hello-devs,
- .responsive_examples,
- .main-program,
- .partners
-  {
-   padding-top: 70px;
-   grid-column: 2/3;
- }
- 
- aside {
-   grid-column: 2/3;
- }
- 
- .borders {
+.nav label {
+  font-size: 2rem;
+  color: var(--bg-light);
+  margin-left: 1.5rem;
+  width: max-content;
+  position: absolute;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 1.3rem;
+  margin-left: 100px;
+}
+
+#toggle {
+  display: none;
+}
+
+.menu {
+  display: none;
+  width: 100vw;
+  background-color: var(--text-dark);
+}
+
+#toggle:checked ~ .menu {
+  display: block;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 0 1rem;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.menu i {
+  font-size: 1.2rem;
+}
+
+.footer a {
+  color: var(--text-dark);
+}
+
+.menu a:hover {
+  color: var(--text-light);
+}
+
+.search {
+  display: block;
+  flex: 1;
+}
+
+.search .fas {
+  margin-left: 60%;
+}
+
+.menu .badge {
+  padding: 0.4rem 1rem;
+  background-color: var(--theme-blue);
+  color: var(--text-light);
+  width: max-content;
+}
+
+.menu .or {
+  color: var(--text-light);
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex: 1;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-dark);
+  }
+
+  #toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .nav label {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 30px;
+    width: 25%;
+  }
+
+  .search {
+    flex: 1;
+  }
+
+  .menu a {
+    padding: 0 1rem;
+  }
+}
+
+/* Main Section */
+
+.main {
+  background-image: url("http://www.hdwallpaperspulse.com/wp-content/uploads/2012/10/2273309478_a389e04276.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main, 
+.about-main {
+  grid-template-columns: 30px auto 30px;
+}
+
+.promotion,
+.hello-devs,
+.compare,
+.responsive_examples,
+.main-program,
+.partners {
+  padding-top: 70px;
+  grid-column: 2/3;
+}
+
+.aside-left {
+  display: none;
+}
+
+.aside-right {
+  display: none;
+}
+.borders {
   border-left: 1px solid var(--bg-light);
   border-right: 1px solid var(--bg-light);
 }
 
-
- /* promotion Section */
+/* promotion Section */
 .promotion {
   border-bottom: 1px solid var(--text-dark);
   height: 190px;
 }
- .promo-card {
-   padding: 2.5rem 0;
- }
 
- .build {
-   background-color: var(--bg-dark);
-   padding: 10px;
-   line-height: 20px;
-   height: 40px;
-   border-radius: 50%;
-   display: block;
-   font-size: 1.4rem;
-   color: var(--bg-primary);
- }
- .follow_participate {
-   overflow-x: hidden;
- }
- .follow_participate p {
-   width: max-content;
- }
+.promo-card {
+  padding: 2.5rem 0;
+}
 
+.build {
+  background-color: var(--bg-dark);
+  padding: 10px;
+  line-height: 20px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  font-size: 1.4rem;
+  color: var(--bg-primary);
+}
 
+.follow_participate {
+  overflow-x: hidden;
+}
 
- /* Hello-devs section*/
- .hello-devs {
-   margin-top: -40px;
-   height: max-content;
+.follow_participate p {
+  width: max-content;
+}
 
- }
+/* Hello-devs section */
+
+.hello-devs {
+  margin-top: -40px;
+  height: max-content;
+}
+
 .hello-devs h1 {
   font-size: 2rem;
   line-height: 50px;
@@ -255,40 +269,44 @@ a {
 
 .title-container {
   margin: auto;
-  background: rgb(235,59,7);
-  background: linear-gradient(28deg, rgba(235,59,7,1) 0%, rgba(173,43,5,1) 28%, rgba(0,0,0,0.9976365546218487) 36%, rgba(0,0,0,1) 40%, rgba(235,59,7,1) 45%, rgba(253,68,14,1) 59%, rgba(0,0,0,1) 61%, rgba(235,59,7,1) 65%, rgba(235,59,7,1) 100%);
- background-clip: text;
--webkit-background-clip: text;
- color: transparent;
+  background: rgb(235, 59, 7);
+  background:
+    linear-gradient(
+      28deg,
+      rgba(235, 59, 7, 1) 0%,
+      rgba(173, 43, 5, 1) 28%,
+      rgba(0, 0, 0, 0.9976365546218487) 36%,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(235, 59, 7, 1) 45%,
+      rgba(253, 68, 14, 1) 59%,
+      rgba(0, 0, 0, 1) 61%,
+      rgba(235, 59, 7, 1) 65%,
+      rgba(235, 59, 7, 1) 100%
+    );
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* aside section */
-
-.aside {
-  display: none;
-}
 
 .topic {
   grid-column: 1/4;
   background-color: black;
   color: var(--bg-primary);
-  font-size: 1.2rem;
   padding: 1rem;
   font-size: 25px;
   text-align: center;
+  height: max-content;
 }
 
-.topic hr {
+hr {
+  border-top: 1px solid var(--accent);
   width: 90px;
 }
 
 /* compare section */
 .compare {
-  grid-column: 1/4;
-  /* background-image: url("../imgs/react-native_flutter_pwa-apps-comparison.jpg"); */
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   height: auto;
 }
 
@@ -296,48 +314,40 @@ a {
   width: 100%;
 }
 
-
 /* .main-program */
 
 .main-program {
   background-image: url("../imgs/black-free-background.png");
   color: var(--text-light);
-  
 }
+
 .sessions {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .session {
   width: 185px;
   padding: 1rem;
-  background-color: var(--bg_card)
+  background-color: var(--bg_card);
 }
 
 .main-program h2 {
   text-align: center;
-  
-}
-hr {
-  border-top: 1px solid var(--accent);
-}
-
-.main-program hr {
-  width: 90px;
 }
 
 .session h3 {
   color: var(--accent);
 }
 
-/* speakers section */
-.speakers {
-  grid-column: 2/3;
-  
+.card-container {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) ;
+  gap: 10px;
 }
 
-.speakers hr {
-  width: 90px;
+/* speakers section */
+.speakers {
+  grid-column: 1/4;
 }
 
 .speakers h2 {
@@ -347,19 +357,15 @@ hr {
 .speaker-card {
   background-color: rgba(255, 255, 255, 0.781);
   border: 1px solid rgba(219, 216, 216, 0.315);
-  
 }
 
 /* partner section */
 .partners {
   grid-column: 1/4;
 }
+
 .partners h2 {
   text-align: center;
-}
-
-.partners hr {
-  width: 90px;
 }
 
 .partners svg {
@@ -374,15 +380,13 @@ hr {
 /* footer */
 .footer {
   padding: 2rem;
+  
 }
+
 .footer h1 {
   font-size: 25px;
   text-align: center;
   margin: 1rem 0;
-}
-
-.footer a {
-  color: var(--text-dark);
 }
 
 .footer ul {
@@ -390,7 +394,17 @@ hr {
 }
 
 .footer li {
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
+}
+
+.table {
+  /* border: 4mm ridge rgba(170, 50, 220, .6); */
+  width: 100%;
+  border: 12px ridge rgb(180, 170, 170);
+}
+
+.tickets-aside {
+  display: none;
 }
 
 /* Desktop Styling */
@@ -401,10 +415,140 @@ hr {
     line-height: 60px;
   }
 }
+
 @media screen and (min-width: 768px) {
+  .main, 
+  .about-main {
+    grid-template-columns: 20vh auto 20vh;
+    gap:10px;
+  }
+
+  .speakers,
+  .partners {
+    grid-column: 2/3;
+  }
+
+  .aside-left {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1;
+    position: fixed;
+    background-color: var(--bg-tickets);
+    width: 20vh;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  .aside-right {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1;
+    position: fixed;
+    background-color: black;
+    width: 20vh;
+    height: 100vh;
+    top: 0;
+    right: 0;
+  }
+
   .hello-devs h1 {
     font-size: 5rem;
     height: 50vh;
     line-height: 80px;
   }
+
+  .table {
+    width: 90%;
+    margin: auto;
+  }
+
+  .tickets-main {
+    grid-template-columns: 20vh auto;
+
+  }
+  .tickets, 
+  .meals {
+    grid-column: 2/3;
+
+  }
+  
+  .tickets-aside {
+    position: fixed;
+    top: 0;
+    background-color: var(--bg-tickets);
+    height: 100vh;
+    width: 20vh;
+    z-index: -1;
+  }
+  
+}
+
+/* tickets section */
+.tickets {
+  
+}
+
+.tickets p {
+  font-size: 1.2rem;
+}
+
+.meals {
+  
+  margin: auto;
+}
+
+.grey-top {
+  height: 15px;
+  width: 100%;
+  background-color: var(--accent);
+}
+
+.meals li {
+  padding: 1.3rem;
+  background-color: var(--bg_card);
+  width: max-content;
+}
+/* About Page */
+
+.write-mode {
+  margin-top: 70px;
+  writing-mode: vertical-rl;
+  font-size: 1.3rem;
+  color: var(--text-grey);
+}
+
+.about-info,
+.past-events, 
+.steering-commitee {
+  grid-column: 2/3;
+}
+
+.events {
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap:10px;
+}
+
+.event {
+  background-image: url("../imgs/stem-list-EVgsAbL51Rk-unsplash.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+.event::after {
+  content: "";
+  background-color: rgba(255, 0, 0, 0.432);
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+
+}
+
+.event h2 {
+  z-index: 2;
 }
