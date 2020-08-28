@@ -192,7 +192,8 @@ a {
  .promotion,
  .hello-devs,
  .responsive_examples,
- .main-program
+ .main-program,
+ .partners
   {
    padding-top: 70px;
    grid-column: 2/3;
@@ -284,11 +285,15 @@ a {
 /* compare section */
 .compare {
   grid-column: 1/4;
-  background-image: url("../imgs/react-native_flutter_pwa-apps-comparison.jpg");
+  /* background-image: url("../imgs/react-native_flutter_pwa-apps-comparison.jpg"); */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 140px;
+  height: auto;
+}
+
+.compare img {
+  width: 100%;
 }
 
 
@@ -342,5 +347,53 @@ hr {
 .speaker-card {
   background-color: rgba(255, 255, 255, 0.781);
   border: 1px solid rgba(219, 216, 216, 0.315);
+  
+}
+
+/* partner section */
+.partners {
+  grid-column: 1/4;
+}
+.partners h2 {
+  text-align: center;
+}
+
+.partners hr {
+  width: 90px;
+}
+
+.partners svg {
+  width: 50px;
+}
+
+.sponsors {
+  background-color: var(--text-light);
+  justify-content: space-around;
+}
+
+/* footer */
+.footer {
+  padding: 2rem;
+}
+.footer h1 {
+  font-size: 25px;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.footer a {
+  color: var(--text-dark);
+}
+
+.footer ul {
+  flex-wrap: wrap;
+}
+
+.footer li {
+  margin: 0 .5rem;
+}
+
+/* Desktop Styling */
+@media screen and (min-width: 375px) {
   
 }
