@@ -9,6 +9,7 @@
   --text-grey: #191919;
   --bg-light: rgb(185, 185, 185);
   --text-menu: #959595;
+  --bg_card: rgba(0, 0, 0, 0.37);
 }
 
 
@@ -29,9 +30,15 @@ img {
   display: block;
   height: auto;
 }
-p {
 
+h2 {
+  font-size: 25px;
 }
+
+h3 {
+  font-size: 20px;
+}
+
 a {
   text-decoration: none;
 }
@@ -232,9 +239,12 @@ a {
  /* Hello-devs section*/
  .hello-devs {
    margin-top: -40px;
+   height: max-content;
 
  }
 .hello-devs h1 {
+  font-size: 2rem;
+  line-height: 50px;
   font-weight: 900;
 }
 
@@ -263,40 +273,74 @@ a {
   color: var(--bg-primary);
   font-size: 1.2rem;
   padding: 1rem;
+  font-size: 25px;
+  text-align: center;
+}
+
+.topic hr {
+  width: 90px;
 }
 
 /* compare section */
 .compare {
   grid-column: 1/4;
   background-image: url("../imgs/react-native_flutter_pwa-apps-comparison.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  height: 250px;
+  background-repeat: no-repeat;
+  height: 140px;
 }
 
-.compare h2{
-
-}
 
 /* .main-program */
 
 .main-program {
   background-image: url("../imgs/black-free-background.png");
   color: var(--text-light);
+  
+}
+.sessions {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.session {
+  width: 185px;
+  padding: 1rem;
+  background-color: var(--bg_card)
 }
 
-.session h2 {
+.main-program h2 {
   text-align: center;
-  font-size: 25px;
+  
+}
+hr {
+  border-top: 1px solid var(--accent);
 }
 
-.session hr {
-  border-top: 1px solid var(--accent);
+.main-program hr {
   width: 90px;
 }
 
 .session h3 {
-  font-size: 20px;
+  color: var(--accent);
+}
+
+/* speakers section */
+.speakers {
+  grid-column: 2/3;
   
 }
 
+.speakers hr {
+  width: 90px;
+}
+
+.speakers h2 {
+  text-align: center;
+}
+
+.speaker-card {
+  background-color: rgba(255, 255, 255, 0.781);
+  border: 1px solid rgba(219, 216, 216, 0.315);
+  
+}
