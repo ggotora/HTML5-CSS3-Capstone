@@ -13,11 +13,10 @@
   --bg-tickets: #ec513c;
 }
 
-body, html {
+body {
   background-color: var(--bg-primary);
   font-family: "Source Sans Pro", sans-serif;
   width: 100%;
-  height: 100%;
   box-sizing: border-box;
 }
 
@@ -37,6 +36,10 @@ h3 {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  color:var(--text-grey)
 }
 
 li {
@@ -64,8 +67,7 @@ li {
   position: fixed;
   height: 70px;
   line-height: 70px;
-  z-index: 100;
-  border: 1px solid black;
+  z-index: 100; 
 }
 
 .header a {
@@ -125,7 +127,7 @@ li {
 }
 
 .menu a:hover {
-  color: var(--text-light);
+  color: var(--text-menu);
 }
 
 .search {
@@ -183,19 +185,21 @@ li {
   .menu a {
     padding: 0 1rem;
   }
+
 }
 
 /* Main Section */
-
+main {
+  padding-top: 70px;
+}
 .main {
-  background-image: url("http://www.hdwallpaperspulse.com/wp-content/uploads/2012/10/2273309478_a389e04276.jpg");
+  background-image: url("../imgs/bg_main.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.main, 
-.about-main {
+.main, .about-main{
   grid-template-columns: 30px auto 30px;
 }
 
@@ -204,8 +208,8 @@ li {
 .compare,
 .responsive_examples,
 .main-program,
-.partners {
-  padding-top: 70px;
+.partners,
+.cta {
   grid-column: 2/3;
 }
 
@@ -251,24 +255,14 @@ li {
 }
 
 /* Hello-devs section */
-
-.hello-devs {
-  margin-top: -40px;
-  height: max-content;
-}
-
-.hello-devs h1 {
-  font-size: 2rem;
-  line-height: 50px;
+.title-container h1 {
   font-weight: 900;
 }
 
-.break {
-  transform: rotate(25deg);
-}
 
 .title-container {
-  margin: auto;
+  position: relative;
+  margin-left: 10%;
   background: rgb(235, 59, 7);
   background:
     linear-gradient(
@@ -288,16 +282,32 @@ li {
   color: transparent;
 }
 
-/* aside section */
+.this-year {
+  background-color: rgba(173, 167, 167, 0.226);
+  width: 80vw;
+  margin: auto;
+}
+
+
+
+.this-year .btn {
+  background-color: var(--bg-tickets);
+}
+
+
+
+
+
+/* topic  section */
 
 .topic {
-  grid-column: 1/4;
-  background-color: black;
-  color: var(--bg-primary);
-  padding: 1rem;
-  font-size: 25px;
-  text-align: center;
+  grid-column: 2/3;
   height: max-content;
+}
+
+.the-topics {
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  row-gap: 25px;
 }
 
 hr {
@@ -316,7 +326,7 @@ hr {
 
 /* .main-program */
 
-.main-program {
+.the-sessions{
   background-image: url("../imgs/black-free-background.png");
   color: var(--text-light);
 }
@@ -397,10 +407,13 @@ hr {
   margin: 0 0.5rem;
 }
 
+.footer a:hover {
+  color: var(--text-light)
+}
 .table {
-  /* border: 4mm ridge rgba(170, 50, 220, .6); */
-  width: 100%;
-  border: 12px ridge rgb(180, 170, 170);
+  width: 90%;
+  border: 12px ridge rgb(236, 236, 236);
+  margin: auto;
 }
 
 .tickets-aside {
@@ -411,8 +424,13 @@ hr {
 @media screen and (min-width: 455px) {
   .hello-devs h1 {
     font-size: 3rem;
-    height: 40vh;
-    line-height: 60px;
+    
+  }
+  .partners svg {
+    width: 70px;
+  }
+  .badge {
+    font-size: 1rem;
   }
 }
 
@@ -438,6 +456,7 @@ hr {
     height: 100vh;
     top: 0;
     left: 0;
+    z-index: 10;
   }
 
   .aside-right {
@@ -450,18 +469,23 @@ hr {
     height: 100vh;
     top: 0;
     right: 0;
+    z-index: 10;
   }
 
-  .hello-devs h1 {
-    font-size: 5rem;
-    height: 50vh;
-    line-height: 80px;
+  .like-wrapper {
+    margin-top: 70px;
   }
 
-  .table {
-    width: 90%;
-    margin: auto;
+  .social-1 {
+    font-size: 2rem;
+    margin-left: 20px;
+    color: rgba(10, 38, 46, 0.377);
   }
+
+  .social-1:hover {
+    color: var(--bg-dark)
+  }
+
 
   .tickets-main {
     grid-template-columns: 20vh auto;
@@ -470,8 +494,11 @@ hr {
   .tickets, 
   .meals {
     grid-column: 2/3;
+    width: 90%;
+    margin: auto;
 
   }
+
   
   .tickets-aside {
     position: fixed;
@@ -481,21 +508,38 @@ hr {
     width: 20vh;
     z-index: -1;
   }
-  
+
+  .partners svg {
+    width: 90px;
+  }
+  .hello-devs h1 {
+    font-size: 5rem;
+  }
 }
 
 /* tickets section */
-.tickets {
+.ticket-btn {
+  background-color: var(--bg-tickets);
+  color: var(--text-light);
+  font-size: 1.3rem;
+}
+
+.meal-list {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) ;
+  gap: 10px;
+}
+.meal-list li {
+  font-weight: 700;
+
+}
+.meal-list li:hover {
+  color: var(--bg-tickets);
   
 }
 
-.tickets p {
-  font-size: 1.2rem;
-}
 
-.meals {
-  
-  margin: auto;
+.badge {
+  background-color: rgba(201, 201, 201, 0.24);
 }
 
 .grey-top {
@@ -505,11 +549,39 @@ hr {
 }
 
 .meals li {
-  padding: 1.3rem;
-  background-color: var(--bg_card);
-  width: max-content;
+  background-color: rgb(245, 243, 243);
+  padding: 1rem;
 }
 /* About Page */
+
+.welcome-about {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  grid-column: 2/3;
+  background-image: url("../imgs/samuel-pereira-uf2nnANWa8Q-unsplash\ \(1\).jpg");
+  background-size: cover;
+  
+}
+.welcome-about::after{
+  content: "";
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.76);
+  
+}
+
+.welcome-about h1{
+  background-color: var(--bg-tickets  );
+  color: var(--text-light);
+  font-weight: 700;
+  font-size: 40px;
+  z-index: 10;
+  padding: .5rem 2rem;
+}
 
 .write-mode {
   margin-top: 70px;
@@ -517,11 +589,15 @@ hr {
   font-size: 1.3rem;
   color: var(--text-grey);
 }
-
+.welcome-about,
 .about-info,
 .past-events, 
 .steering-commitee {
   grid-column: 2/3;
+}
+
+.adj-font {
+  font-size: 1.5rem;
 }
 
 .events {
@@ -551,4 +627,8 @@ hr {
 
 .event h2 {
   z-index: 2;
+}
+
+.meal-list {
+  display: grid;
 }
