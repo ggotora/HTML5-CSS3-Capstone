@@ -221,6 +221,7 @@ li {
 
 /* promotion Section */
 .promotion {
+  padding-top: 70px;
   border-bottom: 1px solid var(--text-dark);
 }
 
@@ -276,6 +277,7 @@ li {
 }
 
 /* cta section */
+
 .this-year {
   background-color: rgba(173, 167, 167, 0.226);
 
@@ -297,12 +299,42 @@ li {
   color: var(--bg-tickets);
   border: 1px solid var(--bg-primary);
 }
+
+.mobile-dev {
+  background-image: url("/imgs/patrik-michalicka-cv4bk-aedJE-unsplash.jpg");
+  background-size: cover;
+  width: 100%;
+  position: relative;
+
+}
+
+.mobile-dev p {
+  z-index: 100 ;
+  color: red;
+
+}
+
+.mobile-dev::after {
+  content: '';
+  background-color: rgba(180, 156, 156, 0.712);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
  
 /* asides */
 
 .aside-left {
   display: none;
   grid-column: 1/2;
+}
+
+.write-mode {
+  writing-mode: vertical-rl;
 }
 
 .aside-right {
@@ -557,86 +589,12 @@ form {
     color: var(--bg-dark);
   }
 
-}
-
-/* 
-@media screen and (min-width: 768px) {
-  .main,
-  .about-main {
-    grid-template-columns: 20vh auto 20vh;
-    gap: 10px;
-  }
-
-  .speakers,
-  .partners {
-    grid-column: 2/3;
-  }
-
-  .aside-left {
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 1;
-    position: fixed;
-    background-color: var(--bg-tickets);
-    width: 20vh;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: 10;
-  }
-
-  .aside-right {
-    display: grid;
-    grid-column: 3/4;
-    grid-row: 1;
-    position: fixed;
-    background-color: black;
-    width: 20vh;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    z-index: 10;
-  }
-
-  .like-wrapper {
-    margin-top: 70px;
-  }
-
-  .social-1 {
-    font-size: 2rem;
-    margin-left: 20px;
-    color: rgba(10, 38, 46, 0.377);
-  }
-
-  .social-1:hover {
-    color: var(--bg-dark);
-  }
-
-  .tickets-main {
-    grid-template-columns: 20vh auto;
-  }
-
-  .tickets,
-  .meals {
-    grid-column: 2/3;
-    width: 90%;
-    margin: auto;
-  }
-
-  .tickets-aside {
-    position: fixed;
-    top: 0;
-    background-color: var(--bg-tickets);
-    height: 100vh;
-    width: 20vh;
-    z-index: -1;
-  }
-
-  .partners svg {
-    width: 90px;
-  }
-
   .hello-devs h1 {
+    margin: 3rem 0;
     font-size: 5rem;
+    line-height: auto;
+    font-weight: 900;
+
   }
-} */
+
+}
