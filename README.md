@@ -24,6 +24,10 @@ The website must have an about page and a tickets.
 
 🔗 [Tek-A-demmy Conference Page](https://keen-euler-32f6b6.netlify.app/)
 
+## Video demo
+
+[Video_Demo](https://www.loom.com/share/ef72c6a819d943f4a529715f221314ea/)
+
 ## Built With
 
 - HTML5
@@ -37,7 +41,7 @@ The website must have an about page and a tickets.
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
-
+/
 ### Prerequisites
 
 Web browser and access to internet
