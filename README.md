@@ -4,7 +4,7 @@ This HTML &amp; CSS Capstone Project is based on an online website for a confere
 
 > This project was developed as a learning project part of the Microverse curriculum.
 
-![screenshot](./images/screenshot.png)
+![screenshot](./imgs/site-screenshot.png)
 
 The aim of the project is to build a website following the design guidelines including
 
