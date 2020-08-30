@@ -22,7 +22,7 @@ The website must have an about page and a tickets.
 
 ## Live demo
 
-🔗 [Newsweek Website Clone](https://rawcdn.githack.com/belsman/Using-Bootstrap/e0d32bf38a83b16db2cd47e3f4965ed4811c0cf8/index.html)
+🔗 [Tek-A-demmy Conference Page](https://keen-euler-32f6b6.netlify.app/)
 
 ## Built With
 
