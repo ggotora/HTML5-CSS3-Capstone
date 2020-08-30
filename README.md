@@ -6,8 +6,19 @@ This HTML &amp; CSS Capstone Project is based on an online website for a confere
 
 ![screenshot](./images/screenshot.png)
 
-An HTML and CSS mockup of the homepage of [Newsweek.com](https://www.newsweek.com/). This project utilizes Bootstrap 4 -- 
-A CSS framework that ease the building of webpage. The layout of the page was achieved using Bootstraps with comes with predefined classes for creating columns and rows.
+The aim of the project is to build a website following the design guidelines including
+
+- colors
+- typographies: font face, size and weight
+- layout: composition and space between elements, for the 2 given screen sizes
+   - mobile: up to 768px
+   - desktop: from 768px
+ based on Cindy Shin's design. [behance.net](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). 
+ The content however has to be personalised.
+ 
+The project requires the use of plain HTML and CSS with the freedom to use the Bootstrap Framework
+The use of CSS Flexbox and CSS Grid is a requirement for the projects.
+The website must have an about page and a tickets.
 
 ## Live demo
 
