@@ -309,14 +309,14 @@ li {
 }
 
 .mobile-dev p {
-  z-index: 100 ;
-  color: red;
+  z-index: 11;
 
 }
 
 .mobile-dev::after {
   content: '';
-  background-color: rgba(180, 156, 156, 0.712);
+  background: rgb(224,224,212);
+background: linear-gradient(80deg, rgba(224,224,212,1) 12%, rgba(224,224,212,0.8715861344537815) 32%, rgba(224,224,212,0.5550595238095238) 40%, rgba(224,224,212,0.4598214285714286) 54%, rgba(217,48,48,0.2553396358543417) 56%, rgba(0,0,0,0.31416316526610644) 84%, rgba(224,224,212,1) 100%);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -597,4 +597,15 @@ form {
 
   }
 
+}
+
+@media screen and (min-width: 992px){
+  .hello-devs h1 {
+    margin: 3rem 0;
+    font-size: 7rem;
+    line-height: 120px;
+    font-weight: 900;
+
+  }
+  
 }
