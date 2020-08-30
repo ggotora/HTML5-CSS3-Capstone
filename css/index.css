@@ -579,7 +579,6 @@ form {
     grid-column: 3/4;
     grid-row: 1;
     position: fixed;
-    background-color: black;
     width: 15vh;
     height: 100vh;
     top: 0;
