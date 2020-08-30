@@ -132,6 +132,10 @@ li {
   color: var(--text-dark);
 }
 
+.event a {
+  z-index: 11;
+}
+
 .menu a:hover {
   color: var(--text-menu);
 }
@@ -198,10 +202,9 @@ li {
 
 /* header */
 
-/* main mobile*/
+/* main mobile */
 .main {
   background-image: url("../imgs/bg_main.jpg");
-  
 }
 
 .promotion,
@@ -212,8 +215,8 @@ li {
 .speakers,
 .partners,
 /* about.html sections */
-.welcome, 
-.about-info, 
+.welcome,
+.about-info,
 .past-events,
 .steering-commitee {
   grid-column: 2/3;
@@ -258,19 +261,19 @@ li {
   position: relative;
   margin-left: 10%;
   background: var(--accent);
-  background: linear-gradient(
-    28deg,
-    rgba(235, 59, 7, 1) 0%,
-    rgba(173, 43, 5, 1) 28%,
-    rgba(0, 0, 0, 0.9976365546218487) 36%,
-    rgba(0, 0, 0, 1) 40%,
-    rgba(235, 59, 7, 1) 45%,
-    rgba(253, 68, 14, 1) 59%,
-    rgba(0, 0, 0, 1) 61%,
-    rgba(235, 59, 7, 1) 65%,
-    rgba(235, 59, 7, 1) 100%
-  );
-
+  background:
+    linear-gradient(
+      28deg,
+      rgba(235, 59, 7, 1) 0%,
+      rgba(173, 43, 5, 1) 28%,
+      rgba(0, 0, 0, 0.9976365546218487) 36%,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(235, 59, 7, 1) 45%,
+      rgba(253, 68, 14, 1) 59%,
+      rgba(0, 0, 0, 1) 61%,
+      rgba(235, 59, 7, 1) 65%,
+      rgba(235, 59, 7, 1) 100%
+    );
   background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -278,9 +281,13 @@ li {
 
 /* cta section */
 
+.discount-bg {
+  background-color: rgb(226, 225, 225);
+  border-top: 1px solid var(--text-menu);
+}
+
 .this-year {
   background-color: rgba(173, 167, 167, 0.226);
-
 }
 
 .this-year .btn {
@@ -305,27 +312,32 @@ li {
   background-size: cover;
   width: 100%;
   position: relative;
-
 }
 
 .mobile-dev p {
   z-index: 11;
-
 }
 
 .mobile-dev::after {
-  content: '';
-  background: rgb(224,224,212);
-background: linear-gradient(80deg, rgba(224,224,212,1) 12%, rgba(224,224,212,0.8715861344537815) 32%, rgba(224,224,212,0.5550595238095238) 40%, rgba(224,224,212,0.4598214285714286) 54%, rgba(217,48,48,0.2553396358543417) 56%, rgba(0,0,0,0.31416316526610644) 84%, rgba(224,224,212,1) 100%);
+  content: "";
+  background: rgb(224, 224, 212);
+  background:
+    linear-gradient(
+      80deg,
+      rgba(224, 224, 212, 1) 22%,
+      rgba(224, 224, 212, 0.5550595238095238) 38%,
+      rgba(8, 8, 1, 0.6110819327731092) 60%,
+      rgba(224, 224, 212, 1) 74%,
+      rgba(0, 0, 0, 0.31416316526610644) 84%,
+      rgba(224, 224, 212, 1) 100%
+    );
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-
 }
 
- 
 /* asides */
 
 .aside-left {
@@ -485,10 +497,6 @@ hr {
   bottom: 0;
 }
 
-.event a {
-  z-index: 11;
-}
-
 /* tickets.html */
 
 .table {
@@ -546,12 +554,13 @@ form {
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .main {
     display: grid;
     grid-template-columns: auto 73vw auto;
     padding: 0;
   }
+
   .aside-left {
     display: grid;
     grid-column: 1/2;
@@ -564,6 +573,7 @@ form {
     left: 0;
     z-index: 10;
   }
+
   .aside-right {
     display: grid;
     grid-column: 3/4;
@@ -576,9 +586,11 @@ form {
     right: 0;
     z-index: 10;
   }
+
   .like-wrapper {
     margin-top: 70px;
   }
+
   .social-1 {
     font-size: 2rem;
     margin-left: 20px;
@@ -592,20 +604,14 @@ form {
   .hello-devs h1 {
     margin: 3rem 0;
     font-size: 5rem;
-    line-height: auto;
     font-weight: 900;
-
   }
-
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
   .hello-devs h1 {
     margin: 3rem 0;
     font-size: 7rem;
-    line-height: 120px;
     font-weight: 900;
-
   }
-  
 }
