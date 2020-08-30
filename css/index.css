@@ -59,10 +59,16 @@ li {
   padding: 0;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
+/* start mobile header and nav styling */
+
 /* Header  */
 
 .header {
-  width: 100%;
+  width: 100vw;
   background-color: var(--bg-dark);
   position: fixed;
   height: 70px;
@@ -102,7 +108,7 @@ li {
 .menu {
   display: none;
   width: 100vw;
-  background-color: var(--text-dark);
+  background-color: var(--bg-tickets);
 }
 
 #toggle:checked ~ .menu {
@@ -178,7 +184,7 @@ li {
 
   .logo {
     margin-left: 30px;
-    width: 25%;
+    width: 15%;
   }
 
   .search {
@@ -190,54 +196,36 @@ li {
   }
 }
 
-/* Main Section */
-main {
-  padding-top: 70px;
-}
+/* header */
 
+/* main mobile*/
 .main {
   background-image: url("../imgs/bg_main.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.main,
-.about-main {
-  grid-template-columns: 30px auto 30px;
+  
 }
 
 .promotion,
 .hello-devs,
-.compare,
-.responsive_examples,
+.cta,
+.topic,
 .main-program,
+.speakers,
 .partners,
-.cta {
+/* about.html sections */
+.welcome, 
+.about-info, 
+.past-events,
+.steering-commitee {
   grid-column: 2/3;
-}
-
-.aside-left {
-  display: none;
-}
-
-.aside-right {
-  display: none;
-}
-
-.borders {
-  border-left: 1px solid var(--bg-light);
-  border-right: 1px solid var(--bg-light);
 }
 
 /* promotion Section */
 .promotion {
   border-bottom: 1px solid var(--text-dark);
-  height: 190px;
 }
 
 .promo-card {
-  padding: 2.5rem 0;
+  padding-top: 2.5rem;
 }
 
 .build {
@@ -259,7 +247,8 @@ main {
   width: max-content;
 }
 
-/* Hello-devs section */
+/* hello-devs */
+
 .title-container h1 {
   font-weight: 900;
 }
@@ -268,36 +257,60 @@ main {
   position: relative;
   margin-left: 10%;
   background: var(--accent);
-  background:
-    linear-gradient(
+  background: linear-gradient(
     28deg,
-      rgba(235, 59, 7, 1) 0%,
-      rgba(173, 43, 5, 1) 28%,
-      rgba(0, 0, 0, 0.9976365546218487) 36%,
-      rgba(0, 0, 0, 1) 40%,
-      rgba(235, 59, 7, 1) 45%,
-      rgba(253, 68, 14, 1) 59%,
-      rgba(0, 0, 0, 1) 61%,
-      rgba(235, 59, 7, 1) 65%,
-      rgba(235, 59, 7, 1) 100%
+    rgba(235, 59, 7, 1) 0%,
+    rgba(173, 43, 5, 1) 28%,
+    rgba(0, 0, 0, 0.9976365546218487) 36%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(235, 59, 7, 1) 45%,
+    rgba(253, 68, 14, 1) 59%,
+    rgba(0, 0, 0, 1) 61%,
+    rgba(235, 59, 7, 1) 65%,
+    rgba(235, 59, 7, 1) 100%
   );
-  
+
   background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
 }
 
+/* cta section */
 .this-year {
   background-color: rgba(173, 167, 167, 0.226);
-  width: 80vw;
-  margin: auto;
+
 }
 
 .this-year .btn {
   background-color: var(--bg-tickets);
 }
 
-/* topic  section */
+.get-ticket {
+  background-color: var(--bg-tickets);
+  font-size: 1rem;
+  color: var(--text-light);
+  border: 1px solid var(--bg-tickets);
+}
+
+.get-ticket:hover {
+  background-color: var(--bg-primary);
+  color: var(--bg-tickets);
+  border: 1px solid var(--bg-primary);
+}
+ 
+/* asides */
+
+.aside-left {
+  display: none;
+  grid-column: 1/2;
+}
+
+.aside-right {
+  display: none;
+  grid-column: 3/4;
+}
+
+/*  topic section */
 
 .topic {
   grid-column: 2/3;
@@ -305,7 +318,7 @@ main {
 }
 
 .the-topics {
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   row-gap: 20px;
 }
 
@@ -314,17 +327,11 @@ hr {
   width: 90px;
 }
 
-/* compare section */
-.compare {
-  height: auto;
+.the-topics card {
+  background-color: var(--bg-dark);
 }
 
-.compare img {
-  width: 100%;
-}
-
-/* .main-program */
-
+/* main program */
 .the-sessions {
   background-image: url("../imgs/black-free-background.png");
   color: var(--text-light);
@@ -350,44 +357,19 @@ hr {
 }
 
 .card-container {
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
 }
 
 /* speakers section */
-.speakers {
-  grid-column: 1/4;
-}
 
-.speakers h2 {
-  text-align: center;
-}
-
-.speaker-card {
-  background-color: rgba(255, 255, 255, 0.781);
-  border: 1px solid rgba(219, 216, 216, 0.315);
-}
-
-/* partner section */
-.partners {
-  grid-column: 1/4;
-}
-
-.partners h2 {
-  text-align: center;
-}
-
-.partners svg {
+.sponsors svg {
   width: 50px;
-}
-
-.sponsors {
-  background-color: var(--text-light);
-  justify-content: space-around;
-  max-width: ;
+  height: 100px;
 }
 
 /* footer */
+
 .footer {
   padding: 2rem;
 }
@@ -410,17 +392,114 @@ hr {
   color: var(--text-light);
 }
 
+/* end index.html mobile and header and nav */
+
+/* start about.html mobile */
+
+/* past events */
+
+/* About Page */
+.welcome-about {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  grid-column: 2/3;
+  background-image: url("../imgs/samuel-pereira-uf2nnANWa8Q-unsplash\ \(1\).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome-about::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.76);
+}
+
+.welcome-about h1 {
+  background-color: var(--bg-tickets);
+  color: var(--text-light);
+  font-weight: 700;
+  font-size: 40px;
+  z-index: 10;
+  padding: 0.5rem 2rem;
+}
+
+.events {
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 10px;
+}
+
+.event {
+  background-image: url("../imgs/stem-list-EVgsAbL51Rk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.event::after {
+  content: "";
+  background-color: rgba(255, 0, 0, 0.432);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.event a {
+  z-index: 11;
+}
+
+/* tickets.html */
+
 .table {
   width: 90%;
   border: 12px ridge rgb(236, 236, 236);
   margin: auto;
 }
 
-.tickets-aside {
-  display: none;
+.ticket-btn {
+  background-color: var(--bg-tickets);
+  color: var(--text-light);
+  font-size: 1.3rem;
 }
 
-/* Desktop Styling */
+.meal-list {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.meals li {
+  background-color: rgb(245, 243, 243);
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.meal-list li:hover {
+  color: var(--bg-tickets);
+  background-color: rgb(226, 225, 225);
+}
+
+.grey-top {
+  height: 15px;
+  width: 100%;
+  background-color: var(--accent);
+}
+
+form {
+  background-color: rgb(226, 225, 225);
+  padding: 3rem;
+}
+
+/* table to desktop styling */
+
 @media screen and (min-width: 455px) {
   .hello-devs h1 {
     font-size: 3rem;
@@ -435,6 +514,52 @@ hr {
   }
 }
 
+@media screen and (min-width: 768px){
+  .main {
+    display: grid;
+    grid-template-columns: auto 73vw auto;
+    padding: 0;
+  }
+  .aside-left {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1;
+    position: fixed;
+    background-color: var(--bg-tickets);
+    width: 15vh;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .aside-right {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1;
+    position: fixed;
+    background-color: black;
+    width: 15vh;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .like-wrapper {
+    margin-top: 70px;
+  }
+  .social-1 {
+    font-size: 2rem;
+    margin-left: 20px;
+    color: rgba(10, 38, 46, 0.377);
+  }
+
+  .social-1:hover {
+    color: var(--bg-dark);
+  }
+
+}
+
+/* 
 @media screen and (min-width: 768px) {
   .main,
   .about-main {
@@ -514,112 +639,4 @@ hr {
   .hello-devs h1 {
     font-size: 5rem;
   }
-}
-
-/* tickets section */
-.ticket-btn {
-  background-color: var(--bg-tickets);
-  color: var(--text-light);
-  font-size: 1.3rem;
-}
-
-.meal-list {
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px;
-}
-
-.meal-list li {
-  font-weight: 700;
-}
-
-.meals li {
-  background-color: rgb(245, 243, 243);
-  padding: 1rem;
-}
-
-.meal-list li:hover {
-  color: var(--bg-tickets);
-  background-color: rgb(226, 225, 225);
-}
-
-.grey-top {
-  height: 15px;
-  width: 100%;
-  background-color: var(--accent);
-}
-
-/* About Page */
-.welcome-about {
-  position: relative;
-  height: 50vh;
-  width: 100%;
-  grid-column: 2/3;
-  background-image: url("../imgs/samuel-pereira-uf2nnANWa8Q-unsplash\ \(1\).jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.welcome-about::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.76);
-}
-
-.welcome-about h1 {
-  background-color: var(--bg-tickets);
-  color: var(--text-light);
-  font-weight: 700;
-  font-size: 40px;
-  z-index: 10;
-  padding: 0.5rem 2rem;
-}
-
-.write-mode {
-  margin-top: 70px;
-  writing-mode: vertical-rl;
-  font-size: 1.3rem;
-  color: var(--text-grey);
-}
-
-.welcome-about,
-.about-info,
-.past-events,
-.steering-commitee {
-  grid-column: 2/3;
-}
-
-.adj-font {
-  font-size: 1.5rem;
-}
-
-.events {
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 10px;
-}
-
-.event {
-  background-image: url("../imgs/stem-list-EVgsAbL51Rk-unsplash.jpg");
-  background-repeat: no-repeat;
-  height: 300px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.event::after {
-  content: "";
-  background-color: rgba(255, 0, 0, 0.432);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.event h2 {
-  z-index: 2;
-}
+} */
