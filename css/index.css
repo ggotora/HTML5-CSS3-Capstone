@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-  color:var(--text-grey)
+  color: var(--text-grey);
 }
 
 li {
@@ -67,7 +67,7 @@ li {
   position: fixed;
   height: 70px;
   line-height: 70px;
-  z-index: 100; 
+  z-index: 100;
 }
 
 .header a {
@@ -139,6 +139,10 @@ li {
   margin-left: 60%;
 }
 
+.badge {
+  background-color: rgba(201, 201, 201, 0.24);
+}
+
 .menu .badge {
   padding: 0.4rem 1rem;
   background-color: var(--theme-blue);
@@ -154,8 +158,7 @@ li {
 @media screen and (min-width: 768px) {
   .menu {
     display: flex;
-    flex: 1;
-    width: 25%;
+    flex: 2;
     justify-content: center;
     align-items: center;
     background-color: var(--bg-dark);
@@ -185,13 +188,13 @@ li {
   .menu a {
     padding: 0 1rem;
   }
-
 }
 
 /* Main Section */
 main {
   padding-top: 70px;
 }
+
 .main {
   background-image: url("../imgs/bg_main.jpg");
   background-size: cover;
@@ -199,7 +202,8 @@ main {
   background-repeat: no-repeat;
 }
 
-.main, .about-main{
+.main,
+.about-main {
   grid-template-columns: 30px auto 30px;
 }
 
@@ -220,6 +224,7 @@ main {
 .aside-right {
   display: none;
 }
+
 .borders {
   border-left: 1px solid var(--bg-light);
   border-right: 1px solid var(--bg-light);
@@ -259,14 +264,13 @@ main {
   font-weight: 900;
 }
 
-
 .title-container {
   position: relative;
   margin-left: 10%;
-  background: rgb(235, 59, 7);
+  background: var(--accent);
   background:
     linear-gradient(
-      28deg,
+    28deg,
       rgba(235, 59, 7, 1) 0%,
       rgba(173, 43, 5, 1) 28%,
       rgba(0, 0, 0, 0.9976365546218487) 36%,
@@ -276,7 +280,8 @@ main {
       rgba(0, 0, 0, 1) 61%,
       rgba(235, 59, 7, 1) 65%,
       rgba(235, 59, 7, 1) 100%
-    );
+  );
+  
   background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -288,15 +293,9 @@ main {
   margin: auto;
 }
 
-
-
 .this-year .btn {
   background-color: var(--bg-tickets);
 }
-
-
-
-
 
 /* topic  section */
 
@@ -306,8 +305,8 @@ main {
 }
 
 .the-topics {
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  row-gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  row-gap: 20px;
 }
 
 hr {
@@ -326,7 +325,7 @@ hr {
 
 /* .main-program */
 
-.the-sessions{
+.the-sessions {
   background-image: url("../imgs/black-free-background.png");
   color: var(--text-light);
 }
@@ -351,7 +350,7 @@ hr {
 }
 
 .card-container {
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) ;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 10px;
 }
 
@@ -385,12 +384,12 @@ hr {
 .sponsors {
   background-color: var(--text-light);
   justify-content: space-around;
+  max-width: ;
 }
 
 /* footer */
 .footer {
   padding: 2rem;
-  
 }
 
 .footer h1 {
@@ -408,8 +407,9 @@ hr {
 }
 
 .footer a:hover {
-  color: var(--text-light)
+  color: var(--text-light);
 }
+
 .table {
   width: 90%;
   border: 12px ridge rgb(236, 236, 236);
@@ -424,21 +424,22 @@ hr {
 @media screen and (min-width: 455px) {
   .hello-devs h1 {
     font-size: 3rem;
-    
   }
+
   .partners svg {
     width: 70px;
   }
+
   .badge {
     font-size: 1rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .main, 
+  .main,
   .about-main {
     grid-template-columns: 20vh auto 20vh;
-    gap:10px;
+    gap: 10px;
   }
 
   .speakers,
@@ -483,23 +484,20 @@ hr {
   }
 
   .social-1:hover {
-    color: var(--bg-dark)
+    color: var(--bg-dark);
   }
-
 
   .tickets-main {
     grid-template-columns: 20vh auto;
-
   }
-  .tickets, 
+
+  .tickets,
   .meals {
     grid-column: 2/3;
     width: 90%;
     margin: auto;
-
   }
 
-  
   .tickets-aside {
     position: fixed;
     top: 0;
@@ -512,6 +510,7 @@ hr {
   .partners svg {
     width: 90px;
   }
+
   .hello-devs h1 {
     font-size: 5rem;
   }
@@ -525,21 +524,22 @@ hr {
 }
 
 .meal-list {
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) ;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;
 }
+
 .meal-list li {
   font-weight: 700;
-
 }
+
+.meals li {
+  background-color: rgb(245, 243, 243);
+  padding: 1rem;
+}
+
 .meal-list li:hover {
   color: var(--bg-tickets);
-  
-}
-
-
-.badge {
-  background-color: rgba(201, 201, 201, 0.24);
+  background-color: rgb(226, 225, 225);
 }
 
 .grey-top {
@@ -548,12 +548,7 @@ hr {
   background-color: var(--accent);
 }
 
-.meals li {
-  background-color: rgb(245, 243, 243);
-  padding: 1rem;
-}
 /* About Page */
-
 .welcome-about {
   position: relative;
   height: 50vh;
@@ -561,26 +556,26 @@ hr {
   grid-column: 2/3;
   background-image: url("../imgs/samuel-pereira-uf2nnANWa8Q-unsplash\ \(1\).jpg");
   background-size: cover;
-  
+  background-position: center;
 }
-.welcome-about::after{
+
+.welcome-about::after {
   content: "";
   position: absolute;
-  top:0;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0.76);
-  
 }
 
-.welcome-about h1{
-  background-color: var(--bg-tickets  );
+.welcome-about h1 {
+  background-color: var(--bg-tickets);
   color: var(--text-light);
   font-weight: 700;
   font-size: 40px;
   z-index: 10;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
 .write-mode {
@@ -589,9 +584,10 @@ hr {
   font-size: 1.3rem;
   color: var(--text-grey);
 }
+
 .welcome-about,
 .about-info,
-.past-events, 
+.past-events,
 .steering-commitee {
   grid-column: 2/3;
 }
@@ -602,7 +598,7 @@ hr {
 
 .events {
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap:10px;
+  gap: 10px;
 }
 
 .event {
@@ -612,23 +608,18 @@ hr {
   align-items: center;
   justify-content: center;
   position: relative;
-
 }
+
 .event::after {
   content: "";
   background-color: rgba(255, 0, 0, 0.432);
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
-
 }
 
 .event h2 {
   z-index: 2;
-}
-
-.meal-list {
-  display: grid;
 }
