@@ -1,21 +1,7 @@
 /* Global Styles */
-:root {
-  --bg-dark: #191919;
-  --accent: #ec5242;
-  --bg-primary: #272a31;
-  --theme-blue: #3558ff;
-  --text-dark: #a5a5a5;
-  --text-light: #fff;
-  --text-grey: #d3d3d3;
-  --bg-light: rgb(185, 185, 185);
-  --text-menu: #959595;
-  --bg_card: rgba(0, 0, 0, 0.37);
-  --bg-tickets-light: #ec503c96;
-  --bg-tickets: #ec513c;
-}
 
 body {
-  background-color: var(--bg-primary);
+  background-color: #272a31;
   font-family: "Source Sans Pro", sans-serif;
   font-family: "Lato", sans-serif;
   width: 100%;
@@ -41,7 +27,7 @@ a {
 }
 
 a:hover {
-  color: var(--text-grey);
+  color: #d3d3d3;
 }
 
 li {
@@ -93,7 +79,7 @@ li {
 
 .header {
   width: 100vw;
-  background-color: var(--bg-dark);
+  background-color: #191919;
   position: fixed;
   height: 70px;
   line-height: 70px;
@@ -101,7 +87,7 @@ li {
 }
 
 .header a {
-  color: var(--text-menu);
+  color: #959595;
   text-decoration: none;
 }
 
@@ -113,7 +99,7 @@ li {
 
 .nav label {
   font-size: 2rem;
-  color: var(--bg-light);
+  color: rgb(185, 185, 185);
   margin-left: 1.5rem;
   width: max-content;
   position: absolute;
@@ -132,7 +118,7 @@ li {
 .menu {
   display: none;
   width: 100vw;
-  background-color: var(--bg-tickets);
+  background-color: #ec513c;
 }
 
 #toggle:checked ~ .menu {
@@ -145,7 +131,7 @@ li {
   width: 100%;
   font-size: 15px;
   font-weight: 700;
-  color: var(--text-light);
+  color: #fff;
 }
 
 .menu i {
@@ -153,7 +139,7 @@ li {
 }
 
 .footer a {
-  color: var(--text-dark);
+  color: #a5a5a5;
 }
 
 .event a {
@@ -161,7 +147,7 @@ li {
 }
 
 .menu a:hover {
-  color: var(--text-menu);
+  color: #959595;
 }
 
 .search {
@@ -179,18 +165,18 @@ li {
 
 .menu .badge {
   padding: 0.4rem 1rem;
-  background-color: var(--bg-tickets);
-  color: var(--text-light);
+  background-color: #ec513c;
+  color: #fff;
   width: max-content;
 }
 
 .menu .badge:hover {
-  background-color: var(--text-light);
-  color: var(--bg-tickets);
+  background-color: #fff;
+  color: #ec513c;
 }
 
 .menu .or {
-  color: var(--text-light);
+  color: #fff;
   margin-left: 15px;
 }
 
@@ -200,7 +186,7 @@ li {
     flex: 2;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-dark);
+    background-color: #191919;
   }
 
   #toggle:checked ~ .menu {
@@ -254,7 +240,7 @@ li {
 /* promotion Section */
 .promotion {
   padding-top: 70px;
-  border-bottom: 1px solid var(--text-dark);
+  border-bottom: 1px solid #a5a5a5;
 }
 
 .promo-card {
@@ -262,14 +248,14 @@ li {
 }
 
 .build {
-  background-color: var(--bg-dark);
+  background-color: #191919;
   padding: 10px;
   line-height: 20px;
   height: 40px;
   border-radius: 50%;
   display: block;
   font-size: 1.4rem;
-  color: var(--bg-primary);
+  color: #272a31;
 }
 
 .follow_participate {
@@ -289,7 +275,7 @@ li {
 .title-container {
   position: relative;
   margin-left: 10%;
-  background: var(--accent);
+  background: #ec5242;
   background-image: url("../imgs/clem-onojeghuo--KOBd29EtYk-unsplash.jpg");
   background-clip: content-box;
   -webkit-background-clip: text;
@@ -300,7 +286,7 @@ li {
 
 .discount-bg {
   background-color: rgb(226, 225, 225);
-  border-top: 1px solid var(--text-menu);
+  border-top: 1px solid #959595;
 }
 
 .this-year {
@@ -308,20 +294,20 @@ li {
 }
 
 .this-year .btn {
-  background-color: var(--bg-tickets);
+  background-color: #ec513c;
 }
 
 .get-ticket {
-  background-color: var(--bg-tickets);
+  background-color: #ec513c;
   font-size: 1rem;
-  color: var(--text-light);
-  border: 1px solid var(--bg-tickets);
+  color: #fff;
+  border: 1px solid #ec513c;
 }
 
 .get-ticket:hover {
-  background-color: var(--bg-primary);
-  color: var(--bg-tickets);
-  border: 1px solid var(--bg-primary);
+  background-color: #272a31;
+  color: #ec513c;
+  border: 1px solid #272a31;
 }
 
 .mobile-dev {
@@ -384,16 +370,16 @@ li {
 }
 
 .the-topics i {
-  color: var(--bg-primary);
+  color: #272a31;
 }
 
 hr {
-  border-top: 1px solid var(--accent);
+  border-top: 1px solid #ec5242;
   width: 90px;
 }
 
 .the-topics card {
-  background-color: var(--bg-dark);
+  background-color: #191919;
 }
 
 .adjust-color-1 {
@@ -403,7 +389,7 @@ hr {
 /* main program */
 .the-sessions {
   background-image: url("../imgs/black-free-background.png");
-  color: var(--text-light);
+  color: #fff;
 }
 
 .sessions {
@@ -414,7 +400,6 @@ hr {
 .session {
   width: 185px;
   padding: 1rem;
-  background-color: var(--bg_card);
 }
 
 .main-program h2 {
@@ -422,7 +407,7 @@ hr {
 }
 
 .session h3 {
-  color: var(--accent);
+  color: #ec5242;
 }
 
 .card-container {
@@ -431,6 +416,10 @@ hr {
 }
 
 /* speakers section */
+
+.speakers {
+  background-color: pink;
+}
 
 .sponsors svg {
   width: 50px;
@@ -458,7 +447,7 @@ hr {
 }
 
 .footer a:hover {
-  color: var(--text-light);
+  color: #fff;
 }
 
 /* end index.html mobile and header and nav */
@@ -489,8 +478,8 @@ hr {
 }
 
 .welcome-about h1 {
-  background-color: var(--bg-tickets);
-  color: var(--text-light);
+  background-color: #ec513c;
+  color: #fff;
   font-weight: 700;
   font-size: 40px;
   z-index: 10;
@@ -535,8 +524,8 @@ hr {
 }
 
 .ticket-btn {
-  background-color: var(--bg-tickets);
-  color: var(--text-light);
+  background-color: #ec513c;
+  color: #fff;
   font-size: 1.3rem;
 }
 
@@ -552,14 +541,14 @@ hr {
 }
 
 .meal-list li:hover {
-  color: var(--bg-tickets);
+  color: #ec513c;
   background-color: rgb(226, 225, 225);
 }
 
 .grey-top {
   height: 15px;
   width: 100%;
-  background-color: var(--accent);
+  background-color: #ec5242;
 }
 
 form {
@@ -595,7 +584,7 @@ form {
     grid-column: 1/2;
     grid-row: 1;
     position: fixed;
-    background-color: var(--bg-tickets);
+    background-color: #ec513c;
     width: 15vh;
     height: 100vh;
     top: 0;
@@ -630,12 +619,12 @@ form {
   }
 
   .social-1:hover {
-    color: var(--bg-dark);
+    color: #191919;
   }
 
   .hello-devs h1 {
     margin: 3rem 0;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 900;
   }
 }
@@ -643,7 +632,7 @@ form {
 @media screen and (min-width: 992px) {
   .hello-devs h1 {
     margin: 3rem 0;
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 900;
   }
 }
