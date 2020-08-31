@@ -1,8 +1,11 @@
 /* Global Styles */
+@font-face {
+  src: url(/fonts/Cocogoose-Compressed-Bold-trial.ttf);
+  font-family: cocoRegular;
+}
 
 body {
   background-color: #272a31;
-  font-family: "Source Sans Pro", sans-serif;
   font-family: "Lato", sans-serif;
   width: 100%;
   box-sizing: border-box;
@@ -270,6 +273,7 @@ li {
 /* hello-devs */
 
 .title-container h1 {
+  font-family: cocoRegular, sans-serif;
   font-weight: 900;
 }
 
@@ -277,7 +281,7 @@ li {
   position: relative;
   margin-left: 10%;
   background: #ec5242;
-  background-image: url("../imgs/clem-onojeghuo--KOBd29EtYk-unsplash.jpg");
+  background-image: url("https://images.unsplash.com/photo-1468958118603-09353f91a3dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
   background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -286,7 +290,6 @@ li {
 /* cta section */
 
 .discount-bg {
-  background-color: rgb(226, 225, 225);
   border-top: 1px solid #959595;
 }
 
@@ -318,23 +321,19 @@ li {
   position: relative;
 }
 
+.farirai-session {
+  font-weight: 900;
+  margin: 1rem 0;
+  z-index: 11;
+}
+
 .mobile-dev p {
   z-index: 11;
 }
 
 .mobile-dev::after {
   content: "";
-  background: rgb(224, 224, 212);
-  background:
-    linear-gradient(
-      80deg,
-      rgba(224, 224, 212, 1) 22%,
-      rgba(224, 224, 212, 0.5550595238095238) 38%,
-      rgba(8, 8, 1, 0.6110819327731092) 60%,
-      rgba(224, 224, 212, 1) 74%,
-      rgba(0, 0, 0, 0.31416316526610644) 84%,
-      rgba(224, 224, 212, 1) 100%
-    );
+  background-color: rgba(0, 0, 0, 0.589);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -427,6 +426,7 @@ hr {
 
 .footer {
   padding: 2rem;
+  grid-column: 2/3;
 }
 
 .footer h1 {
@@ -504,7 +504,7 @@ hr {
 
 .event::after {
   content: "";
-  background-color: rgba(255, 0, 0, 0.432);
+  background-color: rgba(255, 166, 0, 0.582);
   position: absolute;
   top: 0;
   left: 0;
@@ -549,7 +549,6 @@ hr {
 }
 
 form {
-  background-color: rgb(226, 225, 225);
   padding: 3rem;
 }
 
@@ -572,7 +571,7 @@ form {
 @media screen and (min-width: 768px) {
   .main {
     display: grid;
-    grid-template-columns: auto 73vw auto;
+    grid-template-columns: auto 78vw auto;
     padding: 0;
   }
 
@@ -582,7 +581,7 @@ form {
     grid-row: 1;
     position: fixed;
     background-color: #ec513c;
-    width: 15vh;
+    width: 10vw;
     height: 100vh;
     top: 0;
     left: 0;
@@ -594,7 +593,7 @@ form {
     grid-column: 3/4;
     grid-row: 1;
     position: fixed;
-    width: 15vh;
+    width: 10vw;
     height: 100vh;
     top: 0;
     right: 0;
@@ -605,24 +604,30 @@ form {
     color: grey;
   }
 
-  .like-wrapper {
-    margin-top: 70px;
+  .side-icon-cont {
+    height: max-content;
+    background-color: #191919;
+  }
+
+  .spacer {
+    margin: 2.3rem 0;
   }
 
   .social-1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 20px;
     color: rgba(10, 38, 46, 0.377);
   }
 
   .social-1:hover {
-    color: #191919;
+    color: #ec513c;
   }
 
   .hello-devs h1 {
     margin: 3rem 0;
     font-size: 4rem;
     font-weight: 900;
+    font-family: cocoRegular, sans-serif;
   }
 }
 
