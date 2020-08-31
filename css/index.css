@@ -218,6 +218,7 @@ li {
 /* header */
 
 /* main mobile */
+.tickets-main,
 .main {
   background-image: url("../imgs/bg_main.jpg");
 }
