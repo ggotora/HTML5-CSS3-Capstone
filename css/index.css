@@ -504,7 +504,8 @@ hr {
 
 .event::after {
   content: "";
-  background-color: rgba(255, 166, 0, 0.582);
+  background-color: rgba(255, 68, 0, 0.356);
+  background-color: rgba(187, 55, 7, 0.493);
   position: absolute;
   top: 0;
   left: 0;
@@ -627,7 +628,8 @@ form {
     margin: 3rem 0;
     font-size: 4rem;
     font-weight: 900;
-    font-family: cocoRegular, sans-serif;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
   }
 }
 
